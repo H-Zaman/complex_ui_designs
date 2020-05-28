@@ -125,7 +125,7 @@ class MDrawer extends StatelessWidget {
       width: 300,
       height: double.infinity,
       child: Material(
-        color: Colors.blueGrey,
+        color: Colors.lightBlue,
         child: SafeArea(
           //wrap theme > themedata > brigtness  Brightness.dark
           child: Column(
@@ -133,54 +133,74 @@ class MDrawer extends StatelessWidget {
             mainAxisSize: MainAxisSize.max,
             children: <Widget>[
               SizedBox(height: 50,),
-              RaisedButton(
-                color: Colors.transparent,
-                onPressed: (){},
-                child: Row(
-                  children: <Widget>[
-                    Icon(Icons.new_releases),
-                    Text('New')
-                  ],
+              Padding(
+                padding: const EdgeInsets.all(12.0),
+                child: RaisedButton(
+                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+                  color: Colors.transparent,
+                  onPressed: (){},
+                  child: Row(
+                    children: <Widget>[
+                      Icon(Icons.new_releases),
+                      Text('New')
+                    ],
+                  ),
                 ),
               ),
-              RaisedButton(
-                color: Colors.transparent,
-                onPressed: (){},
-                child: Row(
-                  children: <Widget>[
-                    Icon(Icons.warning),
-                    Text('Warning')
-                  ],
+              Padding(
+                padding: const EdgeInsets.all(12.0),
+                child: RaisedButton(
+                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+                  color: Colors.transparent,
+                  onPressed: (){},
+                  child: Row(
+                    children: <Widget>[
+                      Icon(Icons.warning),
+                      Text('Warning')
+                    ],
+                  ),
                 ),
               ),
-              RaisedButton(
-                color: Colors.transparent,
-                onPressed: (){},
-                child: Row(
-                  children: <Widget>[
-                    Icon(Icons.archive),
-                    Text('Archive')
-                  ],
+              Padding(
+                padding: const EdgeInsets.all(12.0),
+                child: RaisedButton(
+                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+                  color: Colors.transparent,
+                  onPressed: (){},
+                  child: Row(
+                    children: <Widget>[
+                      Icon(Icons.archive),
+                      Text('Archive')
+                    ],
+                  ),
                 ),
               ),
-              RaisedButton(
-                color: Colors.transparent,
-                onPressed: (){},
-                child: Row(
-                  children: <Widget>[
-                    Icon(Icons.near_me),
-                    Text('Near Me')
-                  ],
+              Padding(
+                padding: const EdgeInsets.all(12.0),
+                child: RaisedButton(
+                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+                  color: Colors.transparent,
+                  onPressed: (){},
+                  child: Row(
+                    children: <Widget>[
+                      Icon(Icons.near_me),
+                      Text('Near Me')
+                    ],
+                  ),
                 ),
               ),
-              RaisedButton(
-                color: Colors.transparent,
-                onPressed: (){},
-                child: Row(
-                  children: <Widget>[
-                    Icon(Icons.person),
-                    Text('Profile')
-                  ],
+              Padding(
+                padding: const EdgeInsets.all(12.0),
+                child: RaisedButton(
+                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+                  color: Colors.transparent,
+                  onPressed: (){},
+                  child: Row(
+                    children: <Widget>[
+                      Icon(Icons.person),
+                      Text('Profile')
+                    ],
+                  ),
                 ),
               )
             ],
