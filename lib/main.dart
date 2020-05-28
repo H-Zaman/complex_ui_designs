@@ -1,4 +1,5 @@
 import 'package:complexuidesigns/ui/3d_transition_ui.dart';
+import 'package:complexuidesigns/ui/custom_drawer.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -14,7 +15,8 @@ class MyApp extends StatelessWidget {
       ),
       routes: {
         '/': (context) => MyHomePage(),
-        '/3d' : (context) => DTransition()
+        '/3d' : (context) => DTransition(),
+        '/cus' : (context)=> CustomDrawer(),
       },
       initialRoute: '/',
     );
@@ -34,6 +36,12 @@ class MyHomePage extends StatelessWidget {
                 Navigator.pushNamed(context, '/3d');
               },
               child: Text('3D Transition'),
+            ),
+            RaisedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/cus');
+              },
+              child: Text('Custom Drawer'),
             )
           ],
         ),
